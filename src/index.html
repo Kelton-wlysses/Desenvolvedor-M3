@@ -1,19 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor M3</title>
-  <link rel="stylesheet" href="main.css" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <title>Desenvolvedor M3</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-</body>
-<h1>Desafio m3</h1>
+  <body>
+    <header class="header">
+      <figure class="header__image">
+        <img src="./img/logo-m3.png" alt="" />
+      </figure>
 
-<script src="bundle.js"></script>
+      <div class="header__sacola">
+        <img src="./img/sacola.svg" alt="" />
+        <div data-cartItem>
+          <!-- <span>4</span> -->
+        </div>
+      </div>
+    </header>
 
+    <main class="main">
+      <div class="main__header">
+        <div class="main__header__title">
+          <h2>Blusas</h2>
+        </div>
+
+        <select class="main__header__order-by" name="select" data-select >
+          <option selected disabled>Ordenar por:</option>
+          <option value="recentes">Mais recentes</option>
+          <option value="menor">Menor Preço</option>
+          <option value="maior">Maior Preço</option>
+        </select>
+
+        <div class="main__header__resumido">
+          <button>Filtrar</button>
+          <button>Ordenar</button>
+          <!-- <div class="main__heade__fade"></div>
+          <div class="main__heade__modal">
+            <div>
+              <h2>ORDENAR</h2>
+              <button>close</button>
+            </div>
+            <h2>conteudo</h2>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="content">
+        <aside class="content__aside">
+          <fieldset class="aside__cores" data-cores>
+            <h3>CORES</h3>
+            <div>
+              <input type="checkbox" id="amarelo" />
+              <label for="amarelo">Amarelo</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="azul" />
+              <label for="azul">Azul</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="branco" />
+              <label for="branco">Branco</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="cinza" />
+              <label for="cinza">Cinza</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="laranja" />
+              <label for="laranja">Laranja</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="verde" />
+              <label for="verde">Verde</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="vermelho" />
+              <label for="vermelho">Vermelho</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="preto" />
+              <label for="preto">Preto</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="rosa" />
+              <label for="rosa">Rosa</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="vinho" />
+              <label for="vinho">Vinho</label>
+            </div>
+          </fieldset>
+
+          <div class="aside__tamanho">
+            <h3>TAMANHOS</h3>
+            <ul>
+              <li>P</li>
+              <li>M</li>
+              <li>G</li>
+              <li>GG</li>
+              <li>U</li>
+              <li>36</li>
+              <li>38</li>
+              <li>40</li>
+            </ul>
+          </div>
+
+          <fieldset class="aside__preco">
+            <h3>FAIXA DE PREÇO</h3>
+
+            <div>
+              <input type="checkbox" id="50" checked />
+              <label for="50">de R$0 até R$50</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="150" />
+              <label for="150">de R$51 até R$150</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="300" />
+              <label for="300">de R$151 até R$300</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="500" />
+              <label for="500">de R$301 até R$500</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="500+" />
+              <label for="500+">a partir de R$ 500</label>
+            </div>
+          </fieldset>
+        </aside>
+
+        <section class="content__vitrine">
+          <ul class="container" data-productList>
+            
+          </ul>
+
+          <button class="content__vitrine__carregarMais">Carregar mais</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>M3: Implantação de E-commerce VTEX</p>
+    </footer>
+
+    <script src="./bundle.js"></script>
+  </body>
 </html>
