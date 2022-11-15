@@ -1,6 +1,8 @@
 # Teste de Kelton Wlysses
   email: kelton.dev@gmail.com
-  deploy: 
+  
+  digitar yarn para instalar as dependências node_modules
+  digitar yarn start para rodar a aplicação
 
 # Venha ser um desenvolvedor da Digital M3
 
